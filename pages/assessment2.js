@@ -1,12 +1,12 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import axios from 'axios';
 
 export default function assessment2 () {
 
     const baseURI = 'https://api.publicapis.org/categories';
 
-    const [data, setData] = useState([]);
-    const [filter,setFilter] = useState();
+    const [data, setData] = React.useState([]);
+    const [filter,setFilter] = React.useState();
     
     const getData = async () => {
         const response = await axios.get(baseURI);
@@ -14,7 +14,7 @@ export default function assessment2 () {
         setData(resData);
     }
 
-    useEffect(()=> {
+    React.useEffect(()=> {
         console.log("hello");
         getData()
         .then(()=>{
