@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-export default function assessment2 () {
+export default function Assessment2 () {
 
     const baseURI = 'https://api.publicapis.org/categories';
 
